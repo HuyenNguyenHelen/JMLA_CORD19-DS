@@ -4,9 +4,7 @@ import ast
 import matplotlib.pyplot as plt
 
 # Open the file, read the result of DTM (topic evolution)
-with open(
-        r"E:\OneDrive - UNT System\COURSES\INFO 5731\Final_Project\Group6_Working\AUG4\output\DTM\DTM_6timeslices.csv",
-        'r', encoding='utf-8') as file:
+with open(r"\DTM_6timeslices.csv", 'r', encoding='utf-8') as file:
     df = pd.read_csv(file)
 
 # Create a function to convert the topic string (literally displayed as dict) to dictionary
